@@ -1,147 +1,144 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #1f2d2b;
-  background: #f7fbf7;
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#333;
 }
 
-.hero {
-  min-height: 92vh;
-  background: linear-gradient(rgba(8, 56, 35, 0.72), rgba(8, 56, 35, 0.72)),
-              url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover;
-  background-position: center;
-  color: white;
+.hero{
+    background:linear-gradient(rgba(0,100,0,0.7),rgba(0,100,0,0.7)),
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    color:white;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 8%;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
 }
 
-.logo {
-  font-size: 26px;
-  font-weight: bold;
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 24px;
-  font-weight: 600;
+nav ul{
+    display:flex;
+    list-style:none;
 }
 
-.hero-content {
-  text-align: center;
-  padding: 150px 8% 60px;
+nav ul li{
+    margin-left:20px;
 }
 
-.hero-content h1 {
-  font-size: 52px;
-  margin-bottom: 16px;
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.tagline {
-  font-size: 23px;
-  margin-bottom: 30px;
+.hero-content{
+    text-align:center;
+    padding-top:180px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 13px 28px;
-  background: #f4c430;
-  color: #183b2f;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
 }
 
-.section {
-  padding: 70px 10%;
-  text-align: center;
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
 }
 
-.section h2 {
-  font-size: 34px;
-  color: #11633d;
-  margin-bottom: 22px;
+.btn{
+    display:inline-block;
+    background:#ffd700;
+    color:#000;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
 }
 
-.section p {
-  max-width: 900px;
-  margin: 12px auto;
-  font-size: 18px;
+.section{
+    padding:70px 10%;
 }
 
-.light {
-  background: #eaf6ed;
+.section h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:25px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 35px;
+.light{
+    background:#f4f4f4;
 }
 
-.card {
-  background: white;
-  padding: 28px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  text-align: left;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
-.card h3 {
-  color: #11633d;
-  margin-bottom: 12px;
+.card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    font-weight:bold;
 }
 
-.promise {
-  max-width: 700px;
-  margin: auto;
-  text-align: left;
-  font-size: 19px;
+.facility-list{
+    max-width:600px;
+    margin:auto;
 }
 
-.contact {
-  background: #ffffff;
+.facility-list li{
+    margin:12px 0;
 }
 
-.contact a {
-  color: #11633d;
+.contact{
+    text-align:center;
 }
 
-footer {
-  background: #0d3b29;
-  color: white;
-  text-align: center;
-  padding: 20px;
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-@media (max-width: 850px) {
-  .navbar {
-    flex-direction: column;
-    gap: 16px;
-  }
+@media(max-width:768px){
 
-  .nav-links a {
-    margin: 0 8px;
-  }
+    nav{
+        flex-direction:column;
+    }
 
-  .hero-content h1 {
-    font-size: 36px;
-  }
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
-  .cards {
-    grid-template-columns: 1fr;
-  }
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
 }
+```
