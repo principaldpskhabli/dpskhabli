@@ -52,7 +52,7 @@ img{max-width:100%;display:block}
 .topper{background:white;border-left:6px solid var(--gold);padding:18px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
 .topper strong{color:var(--green);font-size:18px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.gallery img{height:240px;width:100%;object-fit:cover;border-radius:16px;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.gallery img{height:220px;width:100%;object-fit:cover;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.12)}
 .contact-box{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
 .info-list p{margin:12px 0;font-size:18px}
 .form input,.form textarea{width:100%;padding:13px 15px;margin:9px 0;border:1px solid #d9e6de;border-radius:10px;font-size:15px}
