@@ -42,10 +42,24 @@
   <div class="container">
     <p class="eyebrow center">Board Results</p>
     <h2 class="center">Recent Result Highlights</h2>
-    <div class="photo-grid two-only">
-      <div class="photo-card"><img src="results-2026.jpg" alt="Results 2026"><div class="caption">Result Highlights 2026</div></div>
-      <div class="photo-card"><img src="results-2025.jpg" alt="Results 2025"><div class="caption">Result Highlights 2025</div></div>
+    <div class="photo-grid">
+
+    <div class="photo-card">
+        <img src="results-2026.jpg" alt="Results 2026">
+        <div class="caption">Class 10 Result Highlights 2026</div>
     </div>
+
+    <div class="photo-card">
+        <img src="results-2025.jpg" alt="Results 2025">
+        <div class="caption">Class 10 Result Highlights 2025</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="result-12th.jpg" alt="10+2 Results">
+        <div class="caption">Class 12 (10+2) Result Highlights</div>
+    </div>
+
+</div>
   </div>
 </section>
 <section class="section light">
@@ -90,7 +104,17 @@
       <p>Khabli, Kangra, Himachal Pradesh</p>
     </div>
   </div>
-  <div class="container copy">© 2026 Dehra Public School Khabli. All Rights Reserved.</div>
+  .photo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.photo-card img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}<div class="container copy">© 2026 Dehra Public School Khabli. All Rights Reserved.</div>
 </footer>
 
 </body>
