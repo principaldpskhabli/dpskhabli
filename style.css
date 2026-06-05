@@ -132,9 +132,12 @@ h3{color:var(--green);margin-top:0}
 
 /* Controlled photo sizes so photos do not become huge */
 .photo-card img{
-  width:100% !important;
-  height:240px !important;
-  object-fit:cover !important;
+  width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  display:block;
+}
   object-position:center !important;
 }
 .split .photo-card img{height:300px !important}
@@ -269,4 +272,12 @@ h3{color:var(--green);margin-top:0}
   .section{padding:44px 0}
   h2{font-size:27px}
   .photo-card img,.split .photo-card img{height:220px !important}
+}
+.result-card img,
+.results-img,
+.photo-card.result-card img{
+  width:100%;
+  height:auto !important;
+  object-fit:contain !important;
+  background:#fff;
 }
