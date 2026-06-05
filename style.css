@@ -284,3 +284,15 @@ h3{color:var(--green);margin-top:0}
   object-fit:contain !important;
   background:#fff;
 }
+.four-results{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+}
+
+.four-results .photo-card img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    display:block;
+}
