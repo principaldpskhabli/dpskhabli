@@ -140,7 +140,10 @@ h3{color:var(--green);margin-top:0}
 }
   object-position:center !important;
 }
-.split .photo-card img{height:300px !important}
+.split .photo-card img{
+    height:auto !important;
+    object-fit:contain !important;
+}
 .caption{
   padding:14px 16px;
   text-align:center;
