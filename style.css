@@ -70,4 +70,25 @@ img{max-width:100%;display:block}
   .grid-2,.grid-3,.grid-4,.contact-box,.footer-grid{grid-template-columns:1fr}
   .hero{min-height:76vh;text-align:center}
   .hero-badges{justify-content:center}
+.document-list {
+  display: grid;
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.document-list a {
+  display: block;
+  padding: 18px 22px;
+  background: #ffffff;
+  border-left: 6px solid #0b7a45;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  color: #064b2f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.document-list a:hover {
+  background: #eaf8f0;
 }
